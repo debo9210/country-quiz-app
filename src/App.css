@@ -1,38 +1,293 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+/* .App {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid red;
+} */
+
+.Container {
+  width: 440px;
+  /* height: 100%; */
+  margin: 0 auto;
+  margin-top: 60px;
+  /* border: 1px solid; */
+}
+
+.HeadingText {
+  font-family: 'Poppins' sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  width: 251px;
+  height: 54px;
+  margin: 0 0 0 17px;
+  /* border: 1px solid red; */
+}
+
+.QuizContainer {
+  border: 1px solid #fff;
+  /* width: 404px; */
+  /* height: 450px; */
+  background: #ffffff;
+  border-radius: 24px;
+  margin: 5px auto 80px auto;
+  /* border: 1px solid orangered; */
+}
+
+/* quiz question styles */
+
+.QuizQuestion {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  width: 85%;
+  height: 36px;
+  /* identical to box height */
+  color: #2f527b;
+  margin: 38px 0 0px 30px;
+}
+
+.QuestionFlag {
+  /* border: 1px solid olivedrab; */
+  width: 350px;
+  margin: 60px auto 5px auto;
+}
+
+.QuestionFlag h3 {
+  width: 333px;
+  height: 72px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1d355d;
+  margin-top: 7px;
+  /* padding: 0; */
+}
+
+.Flag {
+  width: 84px;
+  height: 54px;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.1));
+  border-radius: 4px;
+}
+
+.QuizOptions {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  width: 350px;
+  height: 46px;
+  border: 2px solid rgba(96, 102, 208, 0.7);
+  border-radius: 12px;
+  margin: 20px auto;
+  color: rgba(96, 102, 208, 0.8);
+}
+
+.Hovering:hover {
+  background: #f9a826;
+  color: #fff;
+}
+
+.Correct {
+  background: green;
+  color: #fff;
+  border: none;
+}
+
+.Wrong {
+  background: tomato;
+  color: #fff;
+  border: none;
+}
+
+.Disable {
+  cursor: not-allowed;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Mark {
+  border: 1px solid #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #fff;
+  display: none;
+  /* margin-right: 20px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Option,
+.OptionAns {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+}
+
+.Option {
+  margin-left: 12px;
+}
+
+.OptionAns {
+  margin: 0 20px 0 30px;
+  /* border: 1px solid red; */
+  width: 100%;
+  line-height: 20px;
+}
+
+.advLogo {
+  /* border: 1px solid green; */
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin: -70px 5px 0 0;
+}
+
+.advLogo img {
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+  height: 100px;
+}
+
+.BtnDiv {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 350px;
+  margin: 30px auto;
+}
+
+.Btn {
+  width: 90px;
+  height: 40px;
+  box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.SelectQuestion {
   display: flex;
   flex-direction: column;
+}
+
+.SelectQuestion small {
+  color: rgba(96, 102, 208, 0.8);
+  font-weight: 500;
+  font-style: italic;
+}
+
+label {
+  color: #1d355d;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+input[type='radio'] {
+  /* border: 0px; */
+  width: 15px;
+  height: 15px;
+}
+
+.NextBtn {
+  background: rgb(27, 170, 27);
+  /* background: #f9a826; */
+}
+
+/* scorecard styles  */
+.ScoreCard {
+  /* outline: 1px solid green; */
+  width: 350px;
+  margin: 0 auto;
+}
+
+.winnerLogo {
+  /* outline: 1px solid tomato; */
+  width: 250px;
+  margin: 20px auto 0 auto;
+}
+
+.Result {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  width: 181px;
+  height: 72px;
+  /* identical to box height */
+  color: #1d355d;
+  /* border: 1px solid red; */
+  margin: 40px auto 0 auto;
+}
+
+.ScoreText {
+  /* width: 247px;
+  height: 54px; */
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #1d355d;
+  margin: 10px auto 0 auto;
+  /* border: 1px solid cyan; */
+}
+
+.ScoreNum {
+  color: #75d89e;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 4px;
+}
+
+.Button {
+  /* border: 1px solid purple; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 60px auto 40px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.TryAgainBtn {
+  width: 169px;
+  height: 48px;
+  border: 2px solid #1d355d;
+  border-radius: 8px;
+  outline: none;
+  background: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #1d355d;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* footer styles */
+.FooterText {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #f2f2f2;
+  text-align: center;
 }
