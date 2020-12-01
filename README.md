@@ -160,5 +160,5 @@ $ npm start
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
 
-- GitHub [debo9210](https://{github.com/debo9210})
-- Twitter [@debo9210](https://{twitter.com/debo9210})
+- GitHub [debo9210](https://github.com/debo9210)
+- Twitter [@debo9210](https://twitter.com/debo9210)
