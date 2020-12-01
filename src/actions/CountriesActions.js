@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_COUNTRY_REQUEST, GET_COUNTRY_SUCCESS, GET_COUNTRY_FAIL, GET_RANDOM_NUMBERS } from '../constants/CountryConstants';
+import { GET_COUNTRY_REQUEST, GET_COUNTRY_SUCCESS, GET_COUNTRY_FAIL} from '../constants/CountryConstants';
 
 
 
